@@ -7,7 +7,7 @@ import {
   Box,
   Grid,
 } from '@mui/material';
-import PieChart from './Piechart.jsx'; // Importamos el componente del gráfico
+import PieChart from './PieChart.jsx';
 
 export default function Formulario() {
   const [attendanceIn, setAttendanceIn] = useState('');
@@ -40,7 +40,7 @@ const handleSubmit = async (e) => {
       body: JSON.stringify(payload)
     });
     const resultado = await response.json();
-    setGraficoData(resultado); // ← Aquí actualizamos el gráfico
+    setGraficoData(resultado);
   } catch (err) {
     alert("Error al enviar: " + err.message);
   }
