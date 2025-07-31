@@ -1,3 +1,4 @@
+import PieChart from './PieChart';
 import React, { useState } from 'react';
 import {
   Container,
@@ -7,7 +8,6 @@ import {
   Box,
   Grid,
 } from '@mui/material';
-import PieChart from './PieChart';
 
 export default function Formulario() {
   const [attendanceIn, setAttendanceIn] = useState('');
